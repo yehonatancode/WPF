@@ -19,6 +19,58 @@
             Search
         </TextBlock>
         <ComboBox HorizontalAlignment="Left" Margin="556,75,0,0" VerticalAlignment="Top" Width="120"/>
+        <FlowDocumentReader UseLayoutRounding="True" SnapsToDevicePixels="True" Margin="191,160,-191,0" Height="348" VerticalAlignment="Top">
+    <FlowDocumentReader.Resources>
+        <Style TargetType="TableCell">
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </FlowDocumentReader.Resources>
+    <FlowDocument>
+                <Table CellSpacing="0">
+            <Table.Columns>
+                <TableColumn/>
+                <TableColumn/>
+                <TableColumn/>
+                <TableColumn/>
+            </Table.Columns>
+            <TableRowGroup>
+                <TableRow>
+                    <TableCell BorderBrush="Black" BorderThickness="1">
+                        <Paragraph>Coin</Paragraph>
+                    </TableCell>
+                    <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                                <Paragraph>Rate</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph></Paragraph>
+                    </TableCell>
+                    <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                        <Paragraph></Paragraph>
+                    </TableCell>
+
+                </TableRow>
+                <TableRow>
+                    <TableCell BorderBrush="Black" BorderThickness="1,0,1,1" TextAlignment="Center">
+                                <Paragraph  ></Paragraph>
+                    </TableCell>
+                    <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph> </Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell BorderBrush="Black" BorderThickness="1,0,1,1" TextAlignment="Center">
+                                <Paragraph FontWeight="Bold"></Paragraph>
+                    </TableCell>
+                    <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph> </Paragraph>
+                    </TableCell>
+                </TableRow>               
+            </TableRowGroup>
+        </Table>
+    </FlowDocument>
+</FlowDocumentReader>
 
 
 

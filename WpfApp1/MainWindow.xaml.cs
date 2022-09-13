@@ -21,26 +21,27 @@ namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
-    public class CoinsAPI {
+
+
+/*    public class CoinsAPI
+    {
         static async Task Main(string[] args)
         {
-            using(System.Net.Http.HttpClient client = new HttpClient())
+            using (System.Net.Http.HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://api.exchangeratesapi.io/v1/");
-                HttpResponseMessage response = client.GetAsync("serverlist.php").Result;
+                client.BaseAddress = new Uri("https://api.exchangeratesapi.io/v1/symbols");
+                HttpResponseMessage response = client.GetAsync("? access_key = API_KEY").Result;
                 if (response.IsSuccessStatusCode)
                 {
                     string result = response.Content.ReadAsStringAsync().Result;
                     var obj = System.Text.Json.JsonSerializer.Deserialize<ServerModel>(result);
                 }
-                lvwServer.ItemsSource = obj.servers; //accessing saved api data
-                lvwServer.DisplayMemberPath = "dns";
+
             }
         }
-    
-}
+
+    }*/
+
     public partial class MainWindow : Window
     {
         public MainWindow()
