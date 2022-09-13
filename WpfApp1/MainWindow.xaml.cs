@@ -27,6 +27,7 @@ namespace WpfApp1
     {
         static async Task Main(string[] args)
         {
+
             using (System.Net.Http.HttpClient client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://api.exchangeratesapi.io/v1/symbols");
@@ -36,12 +37,12 @@ namespace WpfApp1
                     string result = response.Content.ReadAsStringAsync().Result;
                     var obj = System.Text.Json.JsonSerializer.Deserialize<ServerModel>(result);
                 }
-
+                
             }
         }
 
-    }*/
-
+    }
+*/
     public partial class MainWindow : Window
     {
         public MainWindow()

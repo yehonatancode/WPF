@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+D88gefWzV6ixjHhSLKSJSannAwGAz3uwLM+aWmy7hjPRqKn+GDWtM38sbjhN8/O6VT15t5vfm0SmKRXyyM3BQ==",
+  "dgSpecHash": "Iia0u9zIaGESfWm7cCuPDWJV4MQe8EHgAKR1IYdo9tzu3IlGUtVKXqqw6z99SEGpwdW+fLKo2kZ5yJP4KRlIrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\v-ytseva\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\v-ytseva\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\v-ytseva\\.nuget\\packages\\glimpse\\1.8.6\\glimpse.1.8.6.nupkg.sha512",
     "C:\\Users\\v-ytseva\\.nuget\\packages\\glimpse.aspnet\\1.9.2\\glimpse.aspnet.1.9.2.nupkg.sha512",
+    "C:\\Users\\v-ytseva\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
+    "C:\\Users\\v-ytseva\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512",
     "C:\\Users\\v-ytseva\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\v-ytseva\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",
     "C:\\Users\\v-ytseva\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
