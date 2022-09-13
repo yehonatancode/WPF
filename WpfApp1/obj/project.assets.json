@@ -24,6 +24,27 @@
           }
         }
       },
+      "Glimpse/1.8.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Glimpse.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Glimpse.Core.dll": {}
+        }
+      },
+      "Glimpse.AspNet/1.9.2": {
+        "type": "package",
+        "dependencies": {
+          "Glimpse": "1.8.6"
+        },
+        "compile": {
+          "lib/net45/Glimpse.AspNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Glimpse.AspNet.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.9": {
         "type": "package",
         "dependencies": {
@@ -2184,6 +2205,45 @@
         "lib/netcoreapp2.1/Azure.Core.xml",
         "lib/netstandard2.0/Azure.Core.dll",
         "lib/netstandard2.0/Azure.Core.xml"
+      ]
+    },
+    "Glimpse/1.8.6": {
+      "sha512": "jubTSNDTgjCcCLibXAB28hnC2MPRjjG5PIrx4Wc5ZILsx8qt3bdEGGIS2LRMQk8mcGHWhEFFPLWFaJQJyWtS9Q==",
+      "type": "package",
+      "path": "glimpse/1.8.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/Glimpse.Core.Documentation.chm",
+        "glimpse.1.8.6.nupkg.sha512",
+        "glimpse.nuspec",
+        "lib/net35/Glimpse.Core.dll",
+        "lib/net40/Glimpse.Core.dll",
+        "lib/net45/Glimpse.Core.dll",
+        "tools/glimpse.psm1",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Glimpse.AspNet/1.9.2": {
+      "sha512": "nqELu3G99CWZIEpdi7Hp7SdBU+8Dl0Y9+CluVRa4HEIGziWmFQ1lJ5Hlyk/U9IRmJ5nolVbJngeWxO4Jz2jqpQ==",
+      "type": "package",
+      "path": "glimpse.aspnet/1.9.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/GlimpseSecurityPolicy.cs.pp",
+        "content/web.config.transform",
+        "glimpse.aspnet.1.9.2.nupkg.sha512",
+        "glimpse.aspnet.nuspec",
+        "lib/net35/Glimpse.AspNet.dll",
+        "lib/net40/Glimpse.AspNet.dll",
+        "lib/net45/Glimpse.AspNet.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.9": {
@@ -6724,6 +6784,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Azure.Core >= 1.25.0",
+      "Glimpse.AspNet >= 1.9.2",
       "Microsoft.AspNet.WebApi.Core >= 5.2.9",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5"
     ]
@@ -6771,6 +6832,10 @@
             "target": "Package",
             "version": "[1.25.0, )"
           },
+          "Glimpse.AspNet": {
+            "target": "Package",
+            "version": "[1.9.2, )"
+          },
           "Microsoft.AspNet.WebApi.Core": {
             "target": "Package",
             "version": "[5.2.9, )"
@@ -6804,6 +6869,26 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Glimpse 1.8.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Glimpse",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Glimpse.AspNet 1.9.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Glimpse.AspNet",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

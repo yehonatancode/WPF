@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Azure.Core;
+using Glimpse.AspNet.Model;
 
 namespace WpfApp1
 {
@@ -27,13 +28,15 @@ namespace WpfApp1
         {
             using(System.Net.Http.HttpClient client = new HttpClient())
             {
-                var response = await client.GetAsync("https://api.exchangeratesapi.io/v1/")
-                    response.EnsureSuccessStatusCode();
+                client.BaseAddress = new Uri("https://api.exchangeratesapi.io/v1/");
+                HttpResponseMessage response = client.GetAsync("serverlist.php").Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    string message = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine(message);
+                    string result = response.Content.ReadAsStringAsync().Result;
+                    var obj = System.Text.Json.JsonSerializer.Deserialize<ServerModel>(result);
                 }
+                lvwServer.ItemsSource = obj.servers; //accessing saved api data
+                lvwServer.DisplayMemberPath = "dns";
             }
         }
     

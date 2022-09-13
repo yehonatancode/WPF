@@ -23,6 +23,25 @@
           }
         }
       },
+      "Glimpse/1.8.6": {
+        "runtime": {
+          "lib/net45/Glimpse.Core.dll": {
+            "assemblyVersion": "1.8.6.0",
+            "fileVersion": "1.8.6.0"
+          }
+        }
+      },
+      "Glimpse.AspNet/1.9.2": {
+        "dependencies": {
+          "Glimpse": "1.8.6"
+        },
+        "runtime": {
+          "lib/net45/Glimpse.AspNet.dll": {
+            "assemblyVersion": "1.9.2.0",
+            "fileVersion": "1.9.2.0"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.9": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.1",
@@ -1676,6 +1695,20 @@
       "sha512": "sha512-X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "path": "azure.core/1.25.0",
       "hashPath": "azure.core.1.25.0.nupkg.sha512"
+    },
+    "Glimpse/1.8.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jubTSNDTgjCcCLibXAB28hnC2MPRjjG5PIrx4Wc5ZILsx8qt3bdEGGIS2LRMQk8mcGHWhEFFPLWFaJQJyWtS9Q==",
+      "path": "glimpse/1.8.6",
+      "hashPath": "glimpse.1.8.6.nupkg.sha512"
+    },
+    "Glimpse.AspNet/1.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nqELu3G99CWZIEpdi7Hp7SdBU+8Dl0Y9+CluVRa4HEIGziWmFQ1lJ5Hlyk/U9IRmJ5nolVbJngeWxO4Jz2jqpQ==",
+      "path": "glimpse.aspnet/1.9.2",
+      "hashPath": "glimpse.aspnet.1.9.2.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.9": {
       "type": "package",

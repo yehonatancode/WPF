@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[1.25.0, )"
             },
+            "Glimpse.AspNet": {
+              "target": "Package",
+              "version": "[1.9.2, )"
+            },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
               "version": "[5.2.9, )"
